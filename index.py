@@ -44,6 +44,7 @@ def enviar_a_mifact(comprobante, items, receptor):
         # Preparar Items
         placa_str = f"| PLACA: {comprobante.placa.upper()}" if comprobante.placa else ""
         split_afectado = comprobante.numeracion_documento_afectado.split("-") if comprobante.numeracion_documento_afectado else []
+
         arr_items = []
         for item in items:
             arr_items.append({
