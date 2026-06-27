@@ -22,14 +22,8 @@ EMP_CONFIG = {
 }
 # --- CONFIGURACIÓN DE IMPRESORA (EPSON TM-T88V) ---
 # Verifica estos IDs en el administrador de dispositivos
-# Convertir IDs de hex string a entero
-ID_VENDOR = int(os.getenv('USB_VENDOR_ID'), 16)
-ID_PRODUCT = int(os.getenv('USB_PRODUCT_ID'), 16)
 # --- CONFIGURACIÓN ---
 INTERVALO_SUNAT = int(os.getenv('INTERVALO_SUNAT', 60))    # Cada 1 min
-INTERVALO_IMPRESION = int(os.getenv('INTERVALO_IMPRESION', 30)) # Cada 30 seg
-ISLAS = os.getenv('ISLAS')
-ISLA_CIERRE = os.getenv('ISLA_CIERRE')
 # --- CONFIGURACIÓN MIFACT ---
 MIFACT_API_URL = os.getenv('MIFACT_API')
 MIFACT_TOKEN = os.getenv('MIFACT_TOKEN')
